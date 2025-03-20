@@ -1,5 +1,6 @@
 import express from 'express';
 import { deleteUser, getUsers, registerUser } from '../controllers/userController.js';
+import { verifyPassword } from '../middleware/verifyPassword.js';
 
 const router = express.Router();
 
@@ -10,6 +11,6 @@ router.get('/', getUsers)
 router.post('/register', registerUser)
 
 // * delete an existing user
-router.delete('/delete', deleteUser)   
+router.delete('/', verifyPassword, deleteUser)   
 
 export default router;
