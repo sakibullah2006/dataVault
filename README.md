@@ -1,6 +1,7 @@
 # **DataVault**
 an API which keeps your secrets 
-![[asset/ss.png]]
+![swappy-20250320_172805](https://github.com/user-attachments/assets/0081d633-def9-44e6-a1f1-c59f8392dd93)
+
 
 
 This API provides CRUD functionality for managing **users**, **vaults**, and **authentication**. It uses MongoDB for data storage and includes password verification for secure access to certain endpoints.
