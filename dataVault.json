@@ -1,0 +1,254 @@
+{
+  "info": {
+    "name": "dataVault",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "create new user",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "users",
+                "register"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"zero\",\n  \"email\": \"zero@gmail.com\",\n  \"password\": \"example\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "delete user",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/users/delete?username=zero",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "users",
+                "delete"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "zero"
+                }
+              ],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "get all users",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/users",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "vault",
+      "item": [
+        {
+          "name": "create a vault",
+          "event": [],
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/vaults/create?username=sakib&password=expresso",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "vaults",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "sakib"
+                },
+                {
+                  "key": "password",
+                  "value": "expresso"
+                }
+              ],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"test title\",\n  \"data\": \"nothing to see here\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "delete a vault",
+          "event": [],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/vaults/67dbb2dcfe982434f3389962?username=sakib&password=expresso",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "vaults",
+                "67dbb2dcfe982434f3389962"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "sakib"
+                },
+                {
+                  "key": "password",
+                  "value": "expresso"
+                }
+              ],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "get all vaults",
+          "event": [],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/vaults?username=sakib&password=expresso",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "vaults"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "sakib"
+                },
+                {
+                  "key": "password",
+                  "value": "expresso"
+                }
+              ],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "update",
+          "event": [],
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://localhost:3000/vaults?username=sakib&password=expresso",
+              "protocol": "http",
+              "host": [
+                "localhost:3000"
+              ],
+              "path": [
+                "vaults"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "sakib"
+                },
+                {
+                  "key": "password",
+                  "value": "expresso"
+                }
+              ],
+              "variable": []
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
