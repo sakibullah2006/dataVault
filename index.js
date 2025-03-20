@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import { connectDB } from './config/db.js';
 import userRoutes from './routes/userRoute.js';
-// import vaultRoutes from './routes/userRoute.js'
+import vaultRoutes from './routes/vaultRoute.js';
 
 
 dotenv.config();
@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 // routes
 app.use('/users', userRoutes);
+app.use('/vaults', vaultRoutes);
 
 
 //connect to the database
