@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DataVault</h1>
+    <p>A secure place to store your secrets.</p>
+
+    <!-- User Registration -->
+    <section>
+      <h2>Register User</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p id="registerResponse"></p>
+    </section>
+
+    <!-- Create Vault -->
+    <section>
+      <h2>Create Vault</h2>
+      <form id="createVaultForm">
+        <input type="text" id="vaultUsername" placeholder="Username" required>
+        <input type="password" id="vaultPassword" placeholder="Password" required>
+        <textarea id="vaultData" placeholder="Enter your secret" required></textarea>
+        <button type="submit">Create Vault</button>
+      </form>
+      <p id="createVaultResponse"></p>
+    </section>
+
+    <!-- Get Vaults -->
+    <section>
+      <h2>Get Vaults</h2>
+      <form id="getVaultsForm">
+        <input type="text" id="getVaultsUsername" placeholder="Username" required>
+        <input type="password" id="getVaultsPassword" placeholder="Password" required>
+        <button type="submit">Get Vaults</button>
+      </form>
+      <div id="vaultsList"></div>
+    </section>
+
+    <!-- Delete User -->
+    <section>
+      <h2>Delete User</h2>
+      <form id="deleteUserForm">
+        <input type="text" id="deleteUsername" placeholder="Username" required>
+        <input type="password" id="deletePassword" placeholder="Password" required>
+        <button type="submit">Delete User</button>
+      </form>
+      <p id="deleteUserResponse"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

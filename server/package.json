@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "echo dummy build script"
+    "build": "echo dummy build script",
+    "vercel-build": "echo nothing"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3",
     "mongoose": "^8.12.1"
   },
   "devDependencies": {

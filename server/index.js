@@ -1,4 +1,5 @@
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import { connectDB } from './config/db.js';
@@ -13,6 +14,11 @@ const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(bodyParser.json());
+app.use(cors({
+  origin: "http://127.0.0.1:5500", // Allow requests from your frontend
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific HTTP methods
+  credentials: true, // Allow cookies and credentials
+}));
 
 // default route
 app.get('/', (req, res) => {
