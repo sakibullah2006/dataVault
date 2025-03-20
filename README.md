@@ -7,9 +7,19 @@ an API which keeps your secrets
 This API provides CRUD functionality for managing **users**, **vaults**, and **authentication**. It uses MongoDB for data storage and includes password verification for secure access to certain endpoints.
 
 ---
-## **Base URL**
+# Set up and run locally
+### clone the repo
+```bash
+git clone https://github.com/sakibullah2006/dataVault.git
+```
+### run using npm
+```bash
+npm run dev
+```
 
-Copy
+
+---
+## **Base URL**
 
 http://localhost:3000
 
