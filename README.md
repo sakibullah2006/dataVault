@@ -20,7 +20,7 @@ git clone https://github.com/sakibullah2006/dataVault.git
 ```
 ### run using npm
 ```bash
-npm run dev
+cd server && npm run dev
 ```
 
 
